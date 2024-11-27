@@ -11,7 +11,7 @@ export default async function UsersPage() {
     <div className="p-20">
       <h1 className="font-bold text-xl">Users</h1>
 
-      {users.map(user => <div>{user.name}</div>)}
+      {users.map(user => <div key={user.id}>{user.name}</div>)}
     </div>
   );
 }
