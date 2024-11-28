@@ -2,7 +2,7 @@ import { client } from "@/sanity/client";
 
 const BANDS_QUERY = `*[_type == "band"]{ _id, name }`;
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 0 } };
 
 interface Band {
   _id: string;
